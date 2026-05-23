@@ -1,17 +1,209 @@
 ---
+import raw from "../../data/platforms.json";
+import discord from "../../data/discord.json";
+import { flatten } from "../lib/flatten";
+import { getColumns } from "../lib/schema";
 
+const data = [flatten(discord), ...raw.map(flatten)];
+const columns = getColumns();
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Discord Alternatives</title>
+
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                background: #282828;
+                color: #ebdbb2;
+                margin: 0;
+            }
+
+            .topbar {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                padding: 14px 16px;
+                border-bottom: 1px solid #3c3836;
+                background: #282828;
+
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+
+            .topbar h1 {
+                margin: 0;
+                padding: 0;
+
+                font-size: 16px;
+                font-weight: 700;
+                color: #fabd2f;
+            }
+
+            .dot {
+                color: #665c54;
+                font-weight: 700;
+            }
+
+            .subtitle {
+                margin: 0;
+                font-size: 12px;
+                color: #a89984;
+                font-weight: 500;
+            }
+
+            .table-shell {
+                padding-bottom: 14px;
+            }
+
+            .table-scroll {
+                overflow-x: auto;
+                overflow-y: visible;
+                border-top: 1px solid #3c3836;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: max-content;
+                min-width: 100%;
+                font-size: 12px;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+                z-index: 2;
+                background: #3c3836;
+                color: #ebdbb2;
+                text-align: left;
+                padding: 8px 10px;
+                border: 1px solid #504945;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+
+            td {
+                border: 1px solid #3c3836;
+                padding: 6px 8px;
+                white-space: nowrap;
+                color: #ebdbb2;
+            }
+
+            tr:nth-child(even) td {
+                background: #32302f;
+            }
+
+            tr:hover td {
+                background: #3c3836;
+            }
+
+            td:first-child {
+                font-weight: 600;
+                color: #fabd2f;
+                background: #282828;
+                position: sticky;
+                left: 0;
+                z-index: 1;
+            }
+
+            tr:hover td:first-child {
+                background: #3c3836;
+            }
+
+            .bool-true {
+                color: #b8bb26;
+                font-weight: 700;
+            }
+
+            .bool-false {
+                color: #fb4934;
+                font-weight: 700;
+            }
+
+            a {
+                color: #83a598;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            .table-scroll::-webkit-scrollbar {
+                height: 10px;
+                width: 10px;
+            }
+
+            .table-scroll::-webkit-scrollbar-thumb {
+                background: #504945;
+                border-radius: 8px;
+            }
+
+            .table-scroll::-webkit-scrollbar-track {
+                background: #282828;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="topbar">
+            <h1>Discord Alternatives</h1>
+            <span class="dot">•</span>
+            <p class="subtitle">Compare Discord with alternative platforms</p>
+        </header>
+
+        <div class="wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        {columns.map((c) => <th>{c.label}</th>)}
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {
+                        data.map((row) => (
+                            <tr>
+                                {columns.map((c) => {
+                                    const val = row[c.key];
+
+                                    if (val === true) {
+                                        return <td class="bool-true">Yes</td>;
+                                    }
+
+                                    if (val === false) {
+                                        return <td class="bool-false">No</td>;
+                                    }
+
+                                    if (Array.isArray(val)) {
+                                        return <td>{val.join(", ")}</td>;
+                                    }
+
+                                    if (
+                                        typeof val === "string" &&
+                                        val.startsWith("http")
+                                    ) {
+                                        return (
+                                            <td>
+                                                <a href={val} target="_blank">
+                                                    link
+                                                </a>
+                                            </td>
+                                        );
+                                    }
+
+                                    return <td>{val ?? "-"}</td>;
+                                })}
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
+        </div>
+    </body>
 </html>
