@@ -44,7 +44,7 @@
         "smart_video_loading_hls": true
       },
       "community": {
-        "bots_plugins": "partial",
+        "bots_plugins": "limited",
         "plural_kit_support": "partial",
         "custom_emotes": true,
         "custom_stickers": true,
@@ -74,6 +74,171 @@
         "performance": "high",
         "market_focus": "general",
         "consumer_relationship": "community-driven"
+      },
+      "safety": {
+        "ai_safety": "yes",
+        "safety_concerns": "low",
+        "transparency": "high"
+      }
+    }
+  },
+  {
+    "name": "Fenrid",
+    "website": "https://fenrid.com",
+    "license": "AGPL-3.0 Planned",
+    "open_source": false,
+    "features": {
+      "privacy": {
+        "encryption": "partial",
+        "data_harvesting_risk": "low",
+        "security_history": "unknown",
+        "kyc_required": "none",
+        "nsfw_support": "unknown"
+      },
+      "core_chat": {
+        "channels": "advanced",
+        "channel_history": "full",
+        "persistent_channel_order": true,
+        "threads": "none",
+        "pinned_posts": true,
+        "direct_messages": true,
+        "reactions": true,
+        "embeds": true,
+        "markdown": "advanced",
+        "message_editing": true,
+        "search": "basic",
+        "typing_indicators": true,
+        "dm_groups": false,
+        "pings": false
+      },
+      "voice_media": {
+        "voice_calls": true,
+        "video_calls": true,
+        "screen_sharing": true,
+        "streaming": true,
+        "noise_suppression": true,
+        "file_sharing": "full",
+        "soundboard": false,
+        "stage": false,
+        "voice_text_chat": false,
+        "activities_games": false,
+        "custom_ringtones": false,
+        "smart_video_loading_hls": false
+      },
+      "community": {
+        "bots_plugins": "none",
+        "plural_kit_support": "none",
+        "custom_emotes": true,
+        "custom_stickers": false,
+        "polls": "none",
+        "events": "advanced",
+        "collaboration_tools": "advanced",
+        "import_from_discord": "unknown",
+        "discord_bridge_sync": "unknown",
+        "application_gate": false,
+        "automod": "unknown"
+      },
+      "platform": {
+        "mobile": false,
+        "web": true,
+        "desktop": false,
+        "desktop_app_platform": "unknown",
+        "cross_language_support": "unknown"
+      },
+      "architecture": {
+        "federation": "none",
+        "self_hosting": "none",
+        "discovery": "basic",
+        "open_source": false
+      },
+      "adoption": {
+        "userbase": "low",
+        "performance": "unknown",
+        "market_focus": "general",
+        "consumer_relationship": "community-driven"
+      },
+      "safety": {
+        "ai_safety": "yes",
+        "safety_concerns": "medium",
+        "transparency": "medium"
+      }
+    }
+  },
+  {
+    "name": "GameVox",
+    "website": "https://gamevox.com",
+    "repo": null,
+    "license": "Proprietary",
+    "open_source": false,
+    "features": {
+      "privacy": {
+        "encryption": "partial",
+        "data_harvesting_risk": "low",
+        "security_history": "good",
+        "kyc_required": "none",
+        "nsfw_support": "full"
+      },
+      "core_chat": {
+        "channels": "advanced",
+        "channel_history": "full",
+        "persistent_channel_order": true,
+        "threads": "basic",
+        "pinned_posts": true,
+        "direct_messages": true,
+        "reactions": true,
+        "embeds": true,
+        "markdown": "advanced",
+        "message_editing": true,
+        "search": "basic",
+        "typing_indicators": true,
+        "dm_groups": false,
+        "pings": false
+      },
+      "voice_media": {
+        "voice_calls": true,
+        "video_calls": true,
+        "screen_sharing": true,
+        "streaming": true,
+        "noise_suppression": true,
+        "file_sharing": "full",
+        "soundboard": true,
+        "stage": false,
+        "voice_text_chat": false,
+        "activities_games": false,
+        "custom_ringtones": false,
+        "smart_video_loading_hls": false
+      },
+      "community": {
+        "bots_plugins": "limited",
+        "plural_kit_support": "full",
+        "custom_emotes": true,
+        "custom_stickers": false,
+        "polls": "basic",
+        "events": "basic",
+        "collaboration_tools": "none",
+        "import_from_discord": "unknown",
+        "discord_bridge_sync": "unknown",
+        "application_gate": false,
+        "automod": "unknown"
+      },
+      "platform": {
+        "mobile": true,
+        "web": true,
+        "desktop": true,
+        "desktop_app_platform": "unknown",
+        "cross_language_support": "unknown"
+      },
+      "architecture": {
+        "federation": "none",
+        "self_hosting": "partial",
+        "discovery": "basic",
+        "open_source": false
+      },
+      "adoption": {
+        "userbase": "low",
+        "performance": "high",
+        "market_focus": "gaming",
+        "consumer_relationship": "neutral"
       },
       "safety": {
         "ai_safety": "yes",
@@ -245,6 +410,171 @@
         "ai_safety": "unknown",
         "safety_concerns": "low",
         "transparency": "medium"
+      }
+    }
+  },
+  {
+    "name": "Valour",
+    "website": "https://valour.gg",
+    "repo": "https://github.com/Valour-Software/Valour",
+    "license": "AGPL-3.0",
+    "open_source": true,
+    "features": {
+      "privacy": {
+        "encryption": "none",
+        "data_harvesting_risk": "low",
+        "security_history": "good",
+        "kyc_required": "none",
+        "nsfw_support": "full"
+      },
+      "core_chat": {
+        "channels": "advanced",
+        "channel_history": "full",
+        "persistent_channel_order": true,
+        "threads": "basic",
+        "pinned_posts": false,
+        "direct_messages": true,
+        "reactions": true,
+        "embeds": true,
+        "markdown": "advanced",
+        "message_editing": true,
+        "search": "basic",
+        "typing_indicators": true,
+        "dm_groups": false,
+        "pings": false
+      },
+      "voice_media": {
+        "voice_calls": true,
+        "video_calls": true,
+        "screen_sharing": true,
+        "streaming": true,
+        "noise_suppression": false,
+        "file_sharing": "limited",
+        "soundboard": false,
+        "stage": false,
+        "voice_text_chat": false,
+        "activities_games": false,
+        "custom_ringtones": false,
+        "smart_video_loading_hls": false
+      },
+      "community": {
+        "bots_plugins": "full",
+        "plural_kit_support": "none",
+        "custom_emotes": true,
+        "custom_stickers": false,
+        "collaboration_tools": "basic",
+        "events": "none",
+        "polls": "none",
+        "import_from_discord": "unknown",
+        "discord_bridge_sync": "unknown",
+        "application_gate": false,
+        "automod": "unknown"
+      },
+      "platform": {
+        "desktop": true,
+        "mobile": true,
+        "web": true,
+        "desktop_app_platform": "unknown",
+        "cross_language_support": "unknown"
+      },
+      "architecture": {
+        "discovery": "advanced",
+        "federation": "none",
+        "open_source": true,
+        "self_hosting": "partial"
+      },
+      "adoption": {
+        "userbase": "medium",
+        "performance": "medium",
+        "consumer_relationship": "community-driven",
+        "market_focus": "mixed"
+      },
+      "safety": {
+        "ai_safety": "none",
+        "safety_concerns": "low",
+        "transparency": "high"
+      }
+    }
+  },
+  {
+    "name": "Yapper",
+    "website": "https://yapper.gg",
+    "license": "Proprietary",
+    "open_source": false,
+    "features": {
+      "privacy": {
+        "encryption": "full",
+        "data_harvesting_risk": "low",
+        "security_history": "good",
+        "kyc_required": "none",
+        "nsfw_support": "full"
+      },
+      "core_chat": {
+        "channels": "advanced",
+        "channel_history": "full",
+        "persistent_channel_order": true,
+        "threads": "basic",
+        "pinned_posts": false,
+        "direct_messages": true,
+        "reactions": false,
+        "embeds": true,
+        "markdown": "basic",
+        "message_editing": false,
+        "search": "basic",
+        "typing_indicators": false,
+        "dm_groups": false,
+        "pings": false
+      },
+      "voice_media": {
+        "voice_calls": true,
+        "video_calls": true,
+        "screen_sharing": true,
+        "streaming": true,
+        "noise_suppression": true,
+        "file_sharing": "full",
+        "soundboard": false,
+        "stage": false,
+        "voice_text_chat": false,
+        "activities_games": false,
+        "custom_ringtones": false,
+        "smart_video_loading_hls": false
+      },
+      "community": {
+        "bots_plugins": "limited",
+        "plural_kit_support": "none",
+        "custom_emotes": false,
+        "custom_stickers": false,
+        "polls": "none",
+        "events": "basic",
+        "collaboration_tools": "none",
+        "import_from_discord": "unknown",
+        "discord_bridge_sync": "unknown",
+        "application_gate": false,
+        "automod": "unknown"
+      },
+      "platform": {
+        "mobile": true,
+        "web": true,
+        "desktop": true,
+        "desktop_app_platform": "unknown",
+        "cross_language_support": "unknown"
+      },
+      "architecture": {
+        "federation": "none",
+        "self_hosting": "full",
+        "discovery": "advanced",
+        "open_source": false
+      },
+      "adoption": {
+        "userbase": "low",
+        "performance": "high",
+        "market_focus": "mixed",
+        "consumer_relationship": "open"
+      },
+      "safety": {
+        "ai_safety": "yes",
+        "safety_concerns": "high",
+        "transparency": "high"
       }
     }
   }
