@@ -138,12 +138,25 @@ Values:
 - advanced: Full thread system with dedicated UI and independent discussion flows
 
 ## pinned_posts
-Type: boolean  
+Type: enum  
 Definition: Whether messages can be pinned for persistent visibility within a channel.
+
+Values:
+- true: Full pin support across supported channel types
+- false: Pinning is not supported
+- partial: Pinning exists but is limited (e.g., certain channel types only or incomplete UI)
 
 ## direct_messages
 Type: boolean  
 Definition: Whether private one-to-one messaging is supported.
+
+## dm_groups
+Type: boolean  
+Definition: Whether private group direct-message conversations (more than two participants) are supported.
+
+## pings
+Type: boolean  
+Definition: Whether users can mention or notify others via @user or #channel references.
 
 ## reactions
 Type: boolean  
@@ -193,6 +206,14 @@ Definition: Support for real-time video communication.
 Type: boolean  
 Definition: Ability to share a screen or application window in real time.
 
+## stage
+Type: boolean  
+Definition: Whether the platform supports stage or auditorium-style voice channels for broadcast-style speaking.
+
+## voice_text_chat
+Type: boolean  
+Definition: Whether text chat is available within voice channels alongside audio.
+
 ## streaming
 Type: boolean  
 Definition: Support for broadcasting live media streams to other users.
@@ -213,6 +234,18 @@ Values:
 ## soundboard
 Type: boolean  
 Definition: Ability to play audio clips or effects in voice channels.
+
+## activities_games
+Type: boolean  
+Definition: Whether integrated activities, games, or shared experiences can run inside voice channels or servers.
+
+## custom_ringtones
+Type: boolean  
+Definition: Whether users can set custom incoming-call or notification ringtones.
+
+## smart_video_loading_hls
+Type: boolean  
+Definition: Whether video streams use adaptive loading (e.g., HLS) for efficient bandwidth usage.
 
 # 2.4 community
 
@@ -269,6 +302,40 @@ Values:
 - basic: Light collaboration tools (threads, mentions, simple coordination features)
 - advanced: Dedicated collaborative systems (shared docs, real-time editing, shared state, integrations)
 
+## import_from_discord
+Type: enum  
+Definition: Ability to import server structure, channels, or messages from Discord.
+
+Values:
+- none: No import tooling
+- partial: Some import capabilities (e.g., structure only)
+- full: Comprehensive import of guild data and/or messages
+- unknown: Not documented or cannot be verified
+
+## discord_bridge_sync
+Type: enum  
+Definition: Whether the platform can bridge or synchronize with Discord servers in real time.
+
+Values:
+- none: No Discord bridging or sync
+- partial: Limited bridge (e.g., one-way relay or partial channel sync)
+- full: Full bidirectional sync or mirror of Discord guilds
+- unknown: Not documented or cannot be verified
+
+## application_gate
+Type: boolean  
+Definition: Whether joining a server requires submitting and approving a membership application.
+
+## automod
+Type: enum  
+Definition: Built-in automated moderation capabilities.
+
+Values:
+- none: No built-in automod
+- basic: Simple keyword or spam filters
+- advanced: Configurable rules, filters, and moderation workflows
+- unknown: Not documented or cannot be verified
+
 # 2.5 platform
 
 ## mobile
@@ -282,6 +349,29 @@ Definition: Availability of a web-based client.
 ## desktop
 Type: boolean  
 Definition: Availability of a native desktop client.
+
+## desktop_app_platform
+Type: enum  
+Definition: Primary framework or runtime used for the native desktop client.
+
+Values:
+- electron: Electron-based desktop app
+- tauri: Tauri-based desktop app
+- qt: Qt-based native app
+- flutter: Flutter desktop app
+- native: Platform-native codebase without a shared wrapper framework
+- none: No desktop client
+- unknown: Not documented or cannot be verified
+
+## cross_language_support
+Type: enum  
+Definition: Extent of localization / multi-language UI support.
+
+Values:
+- none: English only or no localization
+- partial: Some languages supported or community translations
+- full: Broad official localization coverage
+- unknown: Not documented or cannot be verified
 
 # 2.6 architecture
 
