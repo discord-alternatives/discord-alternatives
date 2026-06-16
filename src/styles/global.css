@@ -164,7 +164,7 @@ body {
 .toggle::after {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 2px;
     left: 1px;
     width: 9px;
     height: 9px;
@@ -179,7 +179,7 @@ body {
     border-color: var(--accent);
 }
 .toggle[aria-checked="true"]::after {
-    left: 12px;
+    left: 16px;
     background: #fff;
 }
 .reset-btn {
