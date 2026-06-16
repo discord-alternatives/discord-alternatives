@@ -5,6 +5,10 @@
     "repo": "https://github.com/ad3lre/echo",
     "license": "AGPL-3.0",
     "open_source": true,
+    "vibecoded": true,
+    "logo": "/assets/echo.png",
+    "rating": -1,
+    "notes": "",
     "features": {
       "privacy": {
         "encryption": "partial",
@@ -83,93 +87,15 @@
     }
   },
   {
-    "name": "Fenrid",
-    "website": "https://fenrid.com",
-    "license": "AGPL-3.0 Planned",
-    "open_source": false,
-    "features": {
-      "privacy": {
-        "encryption": "partial",
-        "data_harvesting_risk": "low",
-        "security_history": "unknown",
-        "kyc_required": "none",
-        "nsfw_support": "unknown"
-      },
-      "core_chat": {
-        "channels": "advanced",
-        "channel_history": "full",
-        "persistent_channel_order": true,
-        "threads": "none",
-        "pinned_posts": true,
-        "direct_messages": true,
-        "reactions": true,
-        "embeds": true,
-        "markdown": "advanced",
-        "message_editing": true,
-        "search": "basic",
-        "typing_indicators": true,
-        "dm_groups": false,
-        "pings": false
-      },
-      "voice_media": {
-        "voice_calls": true,
-        "video_calls": true,
-        "screen_sharing": true,
-        "streaming": true,
-        "noise_suppression": true,
-        "file_sharing": "full",
-        "soundboard": false,
-        "stage": false,
-        "voice_text_chat": false,
-        "activities_games": false,
-        "custom_ringtones": false,
-        "smart_video_loading_hls": false
-      },
-      "community": {
-        "bots_plugins": "none",
-        "plural_kit_support": "none",
-        "custom_emotes": true,
-        "custom_stickers": false,
-        "polls": "none",
-        "events": "advanced",
-        "collaboration_tools": "advanced",
-        "import_from_discord": "unknown",
-        "discord_bridge_sync": "unknown",
-        "application_gate": false,
-        "automod": "unknown"
-      },
-      "platform": {
-        "mobile": false,
-        "web": true,
-        "desktop": false,
-        "desktop_app_platform": "unknown",
-        "cross_language_support": "unknown"
-      },
-      "architecture": {
-        "federation": "none",
-        "self_hosting": "none",
-        "discovery": "basic",
-        "open_source": false
-      },
-      "adoption": {
-        "userbase": "low",
-        "performance": "unknown",
-        "market_focus": "general",
-        "consumer_relationship": "community-driven"
-      },
-      "safety": {
-        "ai_safety": "yes",
-        "safety_concerns": "medium",
-        "transparency": "medium"
-      }
-    }
-  },
-  {
     "name": "GameVox",
     "website": "https://gamevox.com",
     "repo": null,
     "license": "Proprietary",
     "open_source": false,
+    "vibecoded": false,
+    "logo": "/assets/gamevox.png",
+    "rating": 73,
+    "notes": "Very unique in design, whilst still being similar enough to understand.\nHas a built-in level system.\n Has subscriptions if you own a community.",
     "features": {
       "privacy": {
         "encryption": "partial",
@@ -185,25 +111,25 @@
         "threads": "basic",
         "pinned_posts": true,
         "direct_messages": true,
+        "dm_groups": false,
+        "pings": true,
         "reactions": true,
         "embeds": true,
         "markdown": "advanced",
         "message_editing": true,
         "search": "basic",
-        "typing_indicators": true,
-        "dm_groups": false,
-        "pings": false
+        "typing_indicators": true
       },
       "voice_media": {
         "voice_calls": true,
         "video_calls": true,
         "screen_sharing": true,
+        "stage": false,
+        "voice_text_chat": false,
         "streaming": true,
         "noise_suppression": true,
         "file_sharing": "full",
         "soundboard": true,
-        "stage": false,
-        "voice_text_chat": false,
         "activities_games": false,
         "custom_ringtones": false,
         "smart_video_loading_hls": false
@@ -216,10 +142,10 @@
         "polls": "basic",
         "events": "basic",
         "collaboration_tools": "none",
-        "import_from_discord": "unknown",
+        "import_from_discord": "full",
         "discord_bridge_sync": "unknown",
         "application_gate": false,
-        "automod": "unknown"
+        "automod": "advanced"
       },
       "platform": {
         "mobile": true,
@@ -253,6 +179,10 @@
     "repo": "https://github.com/spacebarchat",
     "license": "AGPL-3.0",
     "open_source": true,
+    "vibecoded": false,
+    "logo": "/assets/spacebar.png",
+    "rating": 80,
+    "notes": "Discord-API-compatible server. Bots written for Discord work natively here.",
     "features": {
       "privacy": {
         "encryption": "none",
@@ -321,7 +251,7 @@
         "userbase": "low",
         "performance": "unknown",
         "market_focus": "general",
-        "consumer_relationship": "unknwon"
+        "consumer_relationship": "unknown"
       },
       "safety": {
         "ai_safety": "yes",
@@ -336,6 +266,10 @@
     "repo": "https://github.com/revoltchat",
     "license": "AGPL-3.0",
     "open_source": true,
+    "vibecoded": false,
+    "logo": "/assets/stoat.jpg",
+    "rating": 70,
+    "notes": "Pretty suspicious behavior from the lead maintainer, would recommend self-hosting.\nSee Twitter thread: https://x.com/cybercatb0y/status/2021212346434175412",
     "features": {
       "privacy": {
         "encryption": "none",
@@ -408,7 +342,7 @@
       },
       "safety": {
         "ai_safety": "unknown",
-        "safety_concerns": "low",
+        "safety_concerns": "medium",
         "transparency": "medium"
       }
     }
@@ -419,6 +353,10 @@
     "repo": "https://github.com/Valour-Software/Valour",
     "license": "AGPL-3.0",
     "open_source": true,
+    "vibecoded": false,
+    "logo": "/assets/valour.png",
+    "rating": 50,
+    "notes": "User interface is very confusing to new users.\nThere are lots of bugs that make it to production, and I feel like the users are treated as unpaid beta testers.",
     "features": {
       "privacy": {
         "encryption": "none",
@@ -434,25 +372,25 @@
         "threads": "basic",
         "pinned_posts": false,
         "direct_messages": true,
+        "dm_groups": false,
+        "pings": false,
         "reactions": true,
         "embeds": true,
         "markdown": "advanced",
         "message_editing": true,
         "search": "basic",
-        "typing_indicators": true,
-        "dm_groups": false,
-        "pings": false
+        "typing_indicators": true
       },
       "voice_media": {
         "voice_calls": true,
         "video_calls": true,
         "screen_sharing": true,
+        "stage": false,
+        "voice_text_chat": false,
         "streaming": true,
         "noise_suppression": false,
         "file_sharing": "limited",
         "soundboard": false,
-        "stage": false,
-        "voice_text_chat": false,
         "activities_games": false,
         "custom_ringtones": false,
         "smart_video_loading_hls": false
@@ -462,35 +400,35 @@
         "plural_kit_support": "none",
         "custom_emotes": true,
         "custom_stickers": false,
-        "collaboration_tools": "basic",
-        "events": "none",
         "polls": "none",
+        "events": "none",
+        "collaboration_tools": "basic",
         "import_from_discord": "unknown",
         "discord_bridge_sync": "unknown",
         "application_gate": false,
         "automod": "unknown"
       },
       "platform": {
-        "desktop": true,
         "mobile": true,
         "web": true,
+        "desktop": true,
         "desktop_app_platform": "unknown",
         "cross_language_support": "unknown"
       },
       "architecture": {
-        "discovery": "advanced",
         "federation": "none",
-        "open_source": true,
-        "self_hosting": "partial"
+        "self_hosting": "partial",
+        "discovery": "advanced",
+        "open_source": true
       },
       "adoption": {
         "userbase": "medium",
         "performance": "medium",
-        "consumer_relationship": "community-driven",
-        "market_focus": "mixed"
+        "market_focus": "mixed",
+        "consumer_relationship": "community-driven"
       },
       "safety": {
-        "ai_safety": "none",
+        "ai_safety": "unknown",
         "safety_concerns": "low",
         "transparency": "high"
       }
@@ -499,8 +437,13 @@
   {
     "name": "Yapper",
     "website": "https://yapper.gg",
+    "repo": null,
     "license": "Proprietary",
     "open_source": false,
+    "vibecoded": true,
+    "logo": "/assets/yapper.png",
+    "rating": 43,
+    "notes": "The logo is AI generated, and it wasn't clear that you could use their public nodes, had looked paid. The gamification of a chat-app is cool but it seems generally complex to use.",
     "features": {
       "privacy": {
         "encryption": "full",
@@ -516,25 +459,25 @@
         "threads": "basic",
         "pinned_posts": false,
         "direct_messages": true,
+        "dm_groups": false,
+        "pings": false,
         "reactions": false,
         "embeds": true,
         "markdown": "basic",
         "message_editing": false,
         "search": "basic",
-        "typing_indicators": false,
-        "dm_groups": false,
-        "pings": false
+        "typing_indicators": false
       },
       "voice_media": {
         "voice_calls": true,
         "video_calls": true,
         "screen_sharing": true,
+        "stage": false,
+        "voice_text_chat": false,
         "streaming": true,
         "noise_suppression": true,
         "file_sharing": "full",
         "soundboard": false,
-        "stage": false,
-        "voice_text_chat": false,
         "activities_games": false,
         "custom_ringtones": false,
         "smart_video_loading_hls": false

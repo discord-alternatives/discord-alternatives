@@ -4,13 +4,17 @@
   "repo": null,
   "license": "Proprietary",
   "open_source": false,
+  "vibecoded": false,
+  "logo": "/assets/discord.webp",
+  "rating": -1,
+  "notes": "Reference baseline only, not an alternative.\nThis platform sucks.",
   "features": {
     "privacy": {
       "encryption": "partial",
-      "data_harvesting_risk": "high",
+      "data_harvesting_risk": "medium",
       "security_history": "mixed",
-      "kyc_required": "optional",
-      "nsfw_support": "full"
+      "kyc_required": "none",
+      "nsfw_support": "limited"
     },
     "core_chat": {
       "channels": "advanced",
@@ -36,7 +40,7 @@
       "voice_text_chat": true,
       "streaming": true,
       "noise_suppression": true,
-      "file_sharing": "full",
+      "file_sharing": "limited",
       "soundboard": true,
       "activities_games": true,
       "custom_ringtones": false,
@@ -50,7 +54,7 @@
       "polls": "advanced",
       "events": "advanced",
       "collaboration_tools": "basic",
-      "import_from_discord": "none",
+      "import_from_discord": "full",
       "discord_bridge_sync": "none",
       "application_gate": true,
       "automod": "advanced"
@@ -71,13 +75,13 @@
     "adoption": {
       "userbase": "high",
       "performance": "medium",
-      "market_focus": "mixed",
+      "market_focus": "gaming",
       "consumer_relationship": "closed"
     },
     "safety": {
       "ai_safety": "partial",
       "safety_concerns": "medium",
-      "transparency": "low"
+      "transparency": "medium"
     }
   }
 }

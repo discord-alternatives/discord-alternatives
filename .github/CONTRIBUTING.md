@@ -22,13 +22,15 @@ Before submitting a PR:
 - Ensure no duplicate entries
 - Keep entries alphabetically sorted
 - Discord must remain the first entry
+- DO NOT FILL OUT RATING.
 
 ## Validation
 
 Run locally:
+
 ```bash
-npm install  
-node scripts/validate.mjs  
+npm install
+node scripts/validate.mjs
 ```
 
 Your PR will also be automatically validated in CI.
@@ -49,6 +51,8 @@ Your PR will also be automatically validated in CI.
 - Don’t break schema structure
 - Don’t randomize ordering
 - Don’t mix formatting styles
+- Don't include the rating field.
+- Don't write notes, these are for reviewers.
 
 ## Pull Requests
 

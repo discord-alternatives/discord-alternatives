@@ -27,6 +27,15 @@
       "const": true,
       "description": "Must always be true for inclusion in this dataset"
     },
+    "vibecoded": {
+      "type": "boolean",
+      "description": "Whether the project appears to be vibecoded (maintained by small/informal teams)"
+    },
+    "logo": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to platform logo stored in public/assets"
+    },
 
     "features": {
       "type": "object",
@@ -49,9 +58,6 @@
             },
             "data_harvesting_risk": {
               "enum": ["low", "medium", "high", "unknown"]
-            },
-            "security_history": {
-              "enum": ["good", "mixed", "poor", "unknown"]
             },
             "kyc_required": {
               "enum": ["none", "optional", "required", "unknown"]
@@ -204,7 +210,15 @@
               "type": "boolean"
             },
             "desktop_app_platform": {
-              "enum": ["electron", "tauri", "qt", "flutter", "native", "none", "unknown"]
+              "enum": [
+                "electron",
+                "tauri",
+                "qt",
+                "flutter",
+                "native",
+                "none",
+                "unknown"
+              ]
             },
             "cross_language_support": {
               "enum": ["none", "partial", "full", "unknown"]
@@ -273,6 +287,9 @@
             },
             "transparency": {
               "enum": ["low", "medium", "high", "unknown"]
+            },
+            "security_history": {
+              "enum": ["good", "mixed", "poor", "unknown"]
             }
           }
         }
